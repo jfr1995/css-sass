@@ -7,12 +7,20 @@ Dark green: #28b485
 
 */
 
+/*
+reset padding and margin elemets of the page
+
+use border-box so that padding and margin values defined do not add to the size of the element
+*/
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+/*
+define the font props in the body element so that font props can be inherited. font consistency
+*/
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -22,6 +30,11 @@ body {
   padding: 30px;
 }
 
+/*
+set the position to relative so that we can use top and left properties in child elements
+
+use clip path so we can crop background image
+*/
 .header {
   position: relative;
   height: 95vh;
@@ -32,6 +45,9 @@ body {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
+/*
+u
+*/
 .logo-box {
   position: absolute;
   top: 40px;
